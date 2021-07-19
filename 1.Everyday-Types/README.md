@@ -42,7 +42,7 @@ We can declare `array` types two different ways
 // basics.ts
 
 const userNames: string = "John Sally Sue Jimmy"
-const names: srting[] = userNames.split(" ")
+const names: string[] = userNames.split(" ")
 
 const nums: Array<number> = [1, 2, 3, 4, 5];
 ```
@@ -179,4 +179,13 @@ TypeScript to infer as much as possible for us so this is overkill a bit...
 for (let i: number = 0; i < 10; i++){
     console.log(`i is currently ${i}`)
   }
+```
+
+## Array Methods
+
+Array methods will also still work the same for the most part.
+
+```ts
+[1,2,3,4].forEach( (num: number) => console.log(num));
+const out: number[] = [1,2,3,4,5].map((num: number) => num * 2);
 ```
